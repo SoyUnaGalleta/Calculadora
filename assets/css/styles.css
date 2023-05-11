@@ -1,0 +1,86 @@
+:root {
+    --colorFondo: #595b5a;
+    --colorPantalla: #7cf49a;
+    --colorTeclas: #b8fd99;
+    --colorOperadores: #14c3a2;
+    --colorAC: #14c3a2;
+
+    --fuenteClara: #fff;
+    --fuenteOscura: #000;
+    
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.calculadora {
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--colorFondo);
+    padding: 20px;
+    width: 300px;
+    font-family: Verdana;
+    font-size: 22px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px var(--fuenteOscura);
+}
+
+.pantalla {
+    background: var(--colorPantalla);
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: right;
+    box-shadow: 1px 1px 4px var(--fuenteOscura);
+}
+
+.tecla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    margin-top:20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px var(--fuenteOscura);
+}
+
+.operadores {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.operador{
+    background: var(--colorOperadores)
+}
+
+.numeros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 220px;
+}
+
+.numero {
+    background-color: var(--colorTeclas);
+}
+
+.ac {
+    background-color: var(--colorAC);
+    color: var(--fuenteClara);
+}
+
+.igual {
+    margin: 20px 0px 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorTeclas);
+    width: 60px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px var(--fuenteOscura);
+}

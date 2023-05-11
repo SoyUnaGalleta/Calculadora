@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="contenedor">
+    <div class="calculadora">
+        <div class="pantalla">0</div>
+        <div class="operadores">
+            <div class="tecla operador" onclick="digitar('+')">+</div>
+            <div class="tecla operador" onclick="digitar('-')">-</div>
+            <div class="tecla operador" onclick="digitar('*')">*</div>
+            <div class="tecla operador" onclick="digitar('/')">/</div>
+        </div>
+        <div class="numeros">
+            <div class="tecla numero" onclick="digitar('7')">7</div>
+            <div class="tecla numero" onclick="digitar('8')">8</div>
+            <div class="tecla numero" onclick="digitar('9')">9</div>
+            <div class="tecla numero" onclick="digitar('4')">4</div>
+            <div class="tecla numero" onclick="digitar('5')">5</div>
+            <div class="tecla numero" onclick="digitar('6')">6</div>
+            <div class="tecla numero" onclick="digitar('1')">1</div>
+            <div class="tecla numero" onclick="digitar('2')">2</div>
+            <div class="tecla numero" onclick="digitar('3')">3</div>
+            <div class="tecla numero" onclick="digitar('0')">0</div>
+            <div class="tecla numero" onclick="digitar('.')">.</div>
+            <div class="tecla ac" onclick="borrarPantalla()">AC</div>
+        </div>
+        <div class="igual" onclick="relizarCalculo()">=</div>
+    </div>
+    </div>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
