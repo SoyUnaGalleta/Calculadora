@@ -3,11 +3,15 @@
     --colorPantalla: #7cf49a;
     --colorTeclas: #b8fd99;
     --colorOperadores: #14c3a2;
-    --colorAC: #14c3a2;
 
     --fuenteClara: #fff;
     --fuenteOscura: #000;
     
+}
+
+h1 {
+    text-align: center;
+    color: #14c3a2;
 }
 
 .contenedor {
@@ -70,7 +74,7 @@
 }
 
 .ac {
-    background-color: var(--colorAC);
+    background-color: var(--colorOperadores);
     color: var(--fuenteClara);
 }
 
