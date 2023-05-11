@@ -17,6 +17,7 @@ function digitar(digito) {
     }
 }
 
+
 function borrarPantalla() {
     let enPantalla = document.getElementsByClassName('pantalla')[0]
     enPantalla.innerHTML = '0'
@@ -30,76 +31,40 @@ function relizarCalculo() {
 
     if (arrayNumeros.includes( '+' )) {
 
-        let primerValor = ''
-        let segundoValor = ''
-        let valorFinal = 0
-
-        for (let i = 0; i < arrayNumeros.indexOf( '+' ); i++) {
-            primerValor = primerValor + arrayNumeros[i]
-        } 
-
-        for (let i = arrayNumeros.indexOf( '+' ) + 1 ; i < arrayNumeros.length; i++) {
-            segundoValor = segundoValor + arrayNumeros[i]
-        }
-
-        valorFinal = parseFloat(primerValor) + parseFloat(segundoValor)
+        let nuevaArray = texto.split('+')
+        let primerValor = nuevaArray[0]
+        let segundoValor = nuevaArray[1]
+        let valorFinal = parseFloat(primerValor) + parseFloat(segundoValor)
         enPantalla. innerHTML = valorFinal
 
     }
 
     if (arrayNumeros.includes( '-' )) {
 
-        let primerValor = ''
-        let segundoValor = ''
-        let valorFinal = 0
-
-        for (let i = 0; i < arrayNumeros.indexOf( '-' ); i++) {
-            primerValor = primerValor + arrayNumeros[i]
-        } 
-
-        for (let i = arrayNumeros.indexOf( '-' ) + 1 ; i < arrayNumeros.length; i++) {
-            segundoValor = segundoValor + arrayNumeros[i]
-        }
-
-        valorFinal = parseFloat(primerValor) - parseFloat(segundoValor)
+        let nuevaArray = texto.split('-')
+        let primerValor = nuevaArray[0]
+        let segundoValor = nuevaArray[1]
+        let valorFinal = parseFloat(primerValor) - parseFloat(segundoValor)
         enPantalla. innerHTML = valorFinal
 
     }
 
     if (arrayNumeros.includes( '*' )) {
 
-        let primerValor = ''
-        let segundoValor = ''
-        let valorFinal = 0
-
-        for (let i = 0; i < arrayNumeros.indexOf( '*' ); i++) {
-            primerValor = primerValor + arrayNumeros[i]
-        } 
-
-        for (let i = arrayNumeros.indexOf( '*' ) + 1 ; i < arrayNumeros.length; i++) {
-            segundoValor = segundoValor + arrayNumeros[i]
-        }
-
-        valorFinal = parseFloat(primerValor) * parseFloat(segundoValor)
+        let nuevaArray = texto.split('*')
+        let primerValor = nuevaArray[0]
+        let segundoValor = nuevaArray[1]
+        let valorFinal = parseFloat(primerValor) * parseFloat(segundoValor)
         enPantalla. innerHTML = valorFinal
 
     }
 
     if (arrayNumeros.includes( '/' )) {
 
-        let primerValor = ''
-        let segundoValor = ''
-        let valorFinal = 0
-
-        for (let i = 0; i < arrayNumeros.indexOf( '/' ); i++) {
-            primerValor = primerValor + arrayNumeros[i]
-        } 
-
-        for (let i = arrayNumeros.indexOf( '/' ) + 1 ; i < arrayNumeros.length; i++) {
-            segundoValor = segundoValor + arrayNumeros[i]
-        }
-
-        valorFinal = parseFloat(primerValor) / parseFloat(segundoValor)
+        let nuevaArray = texto.split('/')
+        let primerValor = nuevaArray[0]
+        let segundoValor = nuevaArray[1]
+        let valorFinal = parseFloat(primerValor) / parseFloat(segundoValor)
         enPantalla. innerHTML = valorFinal
 
     }

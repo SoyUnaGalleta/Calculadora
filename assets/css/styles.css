@@ -3,7 +3,6 @@
     --colorPantalla: #7cf49a;
     --colorTeclas: #b8fd99;
     --colorOperadores: #14c3a2;
-
     --fuenteClara: #fff;
     --fuenteOscura: #000;
     
@@ -73,6 +72,10 @@ h1 {
     background-color: var(--colorTeclas);
 }
 
+.numero:hover {
+    background-color: var(--colorPantalla);
+}
+
 .ac {
     background-color: var(--colorOperadores);
     color: var(--fuenteClara);
@@ -87,4 +90,8 @@ h1 {
     width: 60px;
     border-radius: 20px;
     box-shadow: 1px 1px 4px var(--fuenteOscura);
+}
+
+.igual:hover {
+    background-color: var(--colorPantalla);
 }
